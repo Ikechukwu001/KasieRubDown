@@ -1,26 +1,378 @@
+
 @import "tailwindcss";
 
+/* =========================================
+   Kasie Rub Down WELLNESS
+   MODERN SOFTNESS — LUXURY DESIGN SYSTEM
+   ========================================= */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+
+  /* Brand palette */
+  --background: #F8F3ED;
+  --foreground: #4A342B;
+
+  --ivory: #F8F3ED;
+  --sand: #E9DED2;
+  --espresso: #4A342B;
+  --rose: #B98F83;
+  --porcelain: #FFFDF9;
+
+  /* Surfaces */
+  --card: #FFFDF9;
+  --card-foreground: #4A342B;
+
+  --popover: #FFFDF9;
+  --popover-foreground: #4A342B;
+
+  /* Primary actions */
+  --primary: #4A342B;
+  --primary-foreground: #FFFDF9;
+
+  /* Secondary surfaces */
+  --secondary: #E9DED2;
+  --secondary-foreground: #4A342B;
+
+  /* Muted elements */
+  --muted: #F0E8DF;
+  --muted-foreground: #75645A;
+
+  /* Soft accents */
+  --accent: #B98F83;
+  --accent-foreground: #33221C;
+
+  /* Status */
+  --destructive: #B42318;
+  --destructive-foreground: #FFFFFF;
+
+  /* Borders and controls */
+  --border: #E3D7CB;
+  --input: #E3D7CB;
+  --ring: #987064;
+
+  /* Shape */
+  --radius: 0.75rem;
+
+  /* Sidebar compatibility */
+  --sidebar: #F8F3ED;
+  --sidebar-foreground: #4A342B;
+  --sidebar-primary: #4A342B;
+  --sidebar-primary-foreground: #FFFDF9;
+  --sidebar-accent: #E9DED2;
+  --sidebar-accent-foreground: #4A342B;
+  --sidebar-border: #E3D7CB;
+  --sidebar-ring: #987064;
+
+  /* Layout */
+  --page-width: 1280px;
+  --page-gutter: clamp(20px, 5vw, 80px);
+  --section-space: clamp(64px, 9vw, 136px);
+
+  /* Motion */
+  --ease-luxury: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-@theme inline {
+/* Keep the light brand palette consistent, even if
+   an existing component adds the .dark class. */
+
+.dark {
+  color-scheme: light;
+
+  --background: #F8F3ED;
+  --foreground: #4A342B;
+
+  --card: #FFFDF9;
+  --card-foreground: #4A342B;
+
+  --popover: #FFFDF9;
+  --popover-foreground: #4A342B;
+
+  --primary: #4A342B;
+  --primary-foreground: #FFFDF9;
+
+  --secondary: #E9DED2;
+  --secondary-foreground: #4A342B;
+
+  --muted: #F0E8DF;
+  --muted-foreground: #75645A;
+
+  --accent: #B98F83;
+  --accent-foreground: #33221C;
+
+  --border: #E3D7CB;
+  --input: #E3D7CB;
+  --ring: #987064;
+
+  --sidebar: #F8F3ED;
+  --sidebar-foreground: #4A342B;
+  --sidebar-primary: #4A342B;
+  --sidebar-primary-foreground: #FFFDF9;
+  --sidebar-accent: #E9DED2;
+  --sidebar-accent-foreground: #4A342B;
+  --sidebar-border: #E3D7CB;
+  --sidebar-ring: #987064;
+}
+
+/* =========================================
+   TAILWIND CSS 4 THEME MAPPING
+   ========================================= */
+
+@theme {
+  --font-serif: var(--font-heading), Georgia, serif;
+  --font-sans: var(--font-body), Arial, sans-serif;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* =========================================
+   GLOBAL BASE STYLES
+   ========================================= */
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+    background: var(--background);
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+
+    min-height: 100vh;
+    font-family: var(--font-body), Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading), Georgia, serif;
+    font-weight: 400;
+    line-height: 1.12;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+  }
+
+  img {
+    height: auto;
+  }
+
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  button,
+  [role="button"] {
+    cursor: pointer;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+  }
+
+  ::selection {
+    background: #E9DED2;
+    color: #4A342B;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 4px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* =========================================
+   REUSABLE BRAND UTILITIES
+   ========================================= */
+
+@layer components {
+  .site-container {
+    width: min(
+      calc(100% - (var(--page-gutter) * 2)),
+      var(--page-width)
+    );
+    margin-inline: auto;
+  }
+
+  .section-padding {
+    padding-block: var(--section-space);
+  }
+
+  .section-label {
+    display: inline-block;
+    color: var(--muted-foreground);
+    font-family: var(--font-body), Arial, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+
+  .editorial-heading {
+    color: var(--espresso);
+    font-family: var(--font-heading), Georgia, serif;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    line-height: 1.04;
+  }
+
+  .editorial-italic {
+    font-style: italic;
+  }
+
+  .luxury-button {
+    display: inline-flex;
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid var(--espresso);
+    border-radius: 999px;
+    background: var(--espresso);
+    padding: 13px 26px;
+    color: var(--porcelain);
+    font-family: var(--font-body), Arial, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    transition:
+      background-color 250ms ease,
+      color 250ms ease,
+      border-color 250ms ease,
+      transform 250ms var(--ease-luxury);
+  }
+
+  .luxury-button:hover {
+    background: #62483C;
+    border-color: #62483C;
+    transform: translateY(-2px);
+  }
+
+  .luxury-button-outline {
+    background: transparent;
+    color: var(--espresso);
+  }
+
+  .luxury-button-outline:hover {
+    background: var(--espresso);
+    border-color: var(--espresso);
+    color: var(--porcelain);
+  }
+
+  .luxury-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+}
+
+/* =========================================
+   RESPONSIVE REFINEMENTS
+   ========================================= */
+
+@media (max-width: 640px) {
+  :root {
+    --page-gutter: 22px;
+    --section-space: 72px;
+  }
+
+  body {
+    font-size: 15px;
+  }
+
+  h1 {
+    letter-spacing: -0.04em;
+  }
+
+  .luxury-button {
+    min-height: 48px;
+    padding: 12px 22px;
+  }
+}
+
+/* Respect reduced-motion accessibility settings. */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
