@@ -23,7 +23,7 @@ const contactMethods = [
     value: "Kasierubdown@gmail.com",
     href: "mailto:Kasierubdown@gmail.com",
     badge: "Email us",
-    description: "For questions and appointment enquiries.",
+    description: "For questions and appointments enquiries.",
   },
   {
     icon: Phone,
