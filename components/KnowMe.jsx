@@ -84,7 +84,7 @@ export default function KnowMe() {
             <div className="absolute -bottom-8 -right-2 h-32 w-32 overflow-hidden rounded-2xl border-[5px] border-[#FFFDF9] bg-[#E9DED2] shadow-[0_15px_40px_rgba(74,52,43,0.12)] sm:-right-7 sm:h-44 sm:w-44 md:-bottom-10 md:h-52 md:w-52">
               <Image
                 src="/rubseven.jpeg"
-                alt="Thoughtful details that create a calming wellness experience"
+                alt="Thoughtful detail that create a calming wellness experience"
                 fill
                 sizes="(max-width: 640px) 128px, 208px"
                 className="object-cover object-center transition-transform duration-700 hover:scale-105"
