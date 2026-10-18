@@ -39,7 +39,7 @@ export default function ServicesSection() {
       title: "Full Body Serenity",
       description:
         "A head-to-toe flow to encourage relaxation and help you fully unwind.",
-      image: "/Rubeight.jpeg",
+      image: "/rubeight.jpeg",
       icon: Heart,
       tag: "Classic",
       number: "03",
@@ -49,7 +49,7 @@ export default function ServicesSection() {
       title: "Erotic Massage",
       description:
         "A private experience centred on communication, personal boundaries, and comfort.",
-      image: "/Rubnine.jpeg",
+      image: "/rubnine.jpeg",
       icon: Feather,
       tag: "Private",
       number: "04",
