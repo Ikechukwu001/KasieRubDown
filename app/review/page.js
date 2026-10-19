@@ -39,7 +39,7 @@ const placeholderReviews = [
     title: "Great for shoulder tension",
     message:
       "Excellent pressure control, very respectful communication. My shoulders felt noticeably better.",
-    rating: 5,
+    rating: 4,
     created_at: "2024-03-28T16:40:00.000Z",
   },
   {
@@ -48,7 +48,7 @@ const placeholderReviews = [
     title: "Clean and professional",
     message:
       "Everything felt hygienic and thoughtfully prepared. A genuinely relaxing, clinical-standard setup.",
-    rating: 5,
+    rating: 3,
     created_at: "2024-05-03T12:05:00.000Z",
   },
   {
@@ -57,7 +57,7 @@ const placeholderReviews = [
     title: "Smooth booking process",
     message:
       "Quick replies, clear instructions, and a comfortable session from start to finish.",
-    rating: 5,
+    rating: 4,
     created_at: "2024-06-18T09:50:00.000Z",
   },
   {
@@ -84,7 +84,7 @@ const placeholderReviews = [
     title: "Respectful and discreet",
     message:
       "Very professional, private, and consistent care. I felt safe and comfortable.",
-    rating: 5,
+    rating: 4,
     created_at: "2024-09-18T11:30:00.000Z",
   },
   {
@@ -93,7 +93,7 @@ const placeholderReviews = [
     title: "Helped my lower back",
     message:
       "My lower back was tight for weeks—this session made a big difference.",
-    rating: 5,
+    rating: 3,
     created_at: "2024-10-27T13:42:00.000Z",
   },
   {
@@ -111,7 +111,7 @@ const placeholderReviews = [
     title: "Attention to detail",
     message:
       "Small details made the experience feel premium. Great technique and professionalism.",
-    rating: 5,
+    rating: 3,
     created_at: "2024-12-05T08:18:00.000Z",
   },
   {
@@ -120,7 +120,7 @@ const placeholderReviews = [
     title: "Exactly what I needed",
     message:
       "The session was tailored to my needs. I felt refreshed and calm afterwards.",
-    rating: 5,
+    rating: 3,
     created_at: "2025-01-22T12:31:00.000Z",
   },
   {
@@ -138,7 +138,7 @@ const placeholderReviews = [
     title: "Relaxing from minute one",
     message:
       "From the start, the environment felt calm and professional. Highly recommend.",
-    rating: 5,
+    rating: 4,
     created_at: "2025-03-09T10:05:00.000Z",
   },
   {
@@ -156,7 +156,7 @@ const placeholderReviews = [
     title: "Comfortable and respectful",
     message:
       "Everything was respectful, discreet, and well explained. I felt comfortable throughout.",
-    rating: 5,
+    rating: 4,
     created_at: "2025-06-09T14:11:00.000Z",
   },
   {
@@ -183,7 +183,7 @@ const placeholderReviews = [
     title: "Clean setup",
     message:
       "Very clean, organized, and calm. The experience felt premium and intentional.",
-    rating: 5,
+    rating: 3,
     created_at: "2025-10-14T12:50:00.000Z",
   },
   {
@@ -192,7 +192,7 @@ const placeholderReviews = [
     title: "Soothing and effective",
     message:
       "A great blend of relaxation and therapeutic work. I booked again the same week.",
-    rating: 5,
+    rating: 3,
     created_at: "2025-11-05T09:50:00.000Z",
   },
   {
@@ -201,7 +201,7 @@ const placeholderReviews = [
     title: "A refined wellness reset",
     message:
       "The vibe was calm and premium. I felt refreshed and well cared for.",
-    rating: 5,
+    rating: 2,
     created_at: "2026-01-08T11:30:00.000Z",
   },
 ];

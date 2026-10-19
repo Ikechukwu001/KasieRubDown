@@ -143,27 +143,6 @@ export default function PricingPage() {
                 </span>
               </div>
             </div>
-
-            {/* Uploaded price-list image */}
-            <div className="relative mx-auto w-full max-w-md">
-              <div className="absolute -inset-3 rounded-[2rem] border border-[#D7C5B7]" />
-
-              <div className="relative overflow-hidden rounded-[1.7rem] border border-[#E3D7CB] bg-[#FFFDF9] p-2 shadow-xl shadow-[#4A342B]/10 sm:p-3">
-                <Image
-                  src="/rubrates.jpeg"
-                  alt="Kasie Rub Down and Massage original promotional price list"
-                  width={765}
-                  height={1365}
-                  priority
-                  sizes="(max-width: 768px) 100vw, 440px"
-                  className="h-auto w-full rounded-2xl object-contain"
-                />
-              </div>
-
-              <p className="mt-4 text-center text-xs text-[#8A786D]">
-                Kasie Rub Down & Massage
-              </p>
-            </div>
           </div>
         </div>
       </section>

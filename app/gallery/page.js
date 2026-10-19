@@ -34,6 +34,13 @@ const galleryImages = [
   { id: 18, src: "/rubeighteen.jpeg", alt: "A detail from the wellness space", tag: "Details", span: "md:col-span-2" },
   { id: 19, src: "/rubtwentythree.jpeg", alt: "A carefully prepared wellness setting", tag: "Setup", span: "" },
   { id: 20, src: "/rubtwenty.jpeg", alt: "A final glimpse of the lounge atmosphere", tag: "Atmosphere", span: "" },
+  { id: 21, src: "/rubtwentyfur.jpeg", alt: "A warm, softly lit wellness atmosphere", tag: "Atmosphere", span: "md:col-span-2 md:row-span-2" },
+  { id: 22, src: "/rubtwentytw.jpeg", alt: "A thoughtfully prepared private space", tag: "Setup", span: "" },
+  { id: 23, src: "/rubtwentynine.jpeg", alt: "Carefully arranged wellness essentials", tag: "Details", span: "" },
+  { id: 24, src: "/rubwentyeight.jpeg", alt: "Warm textures and refined lounge styling", tag: "Atmosphere", span: "md:row-span-2" },
+  { id: 25, src: "/rubtwentysix.jpeg", alt: "Fresh linens and a welcoming environment", tag: "Setup", span: "" },
+  { id: 26, src: "/rubtwentyfive.jpeg", alt: "A calm setting prepared with care", tag: "Setup", span: "md:col-span-2" },
+  { id: 27, src: "/rubtwentyseven.jpeg", alt: "A quiet corner designed for comfort", tag: "Atmosphere", span: "" },
 ];
 
 export default function GalleryPage() {
@@ -122,7 +129,7 @@ export default function GalleryPage() {
 
             <div className="lg:col-span-4 lg:justify-self-end">
               <div className="border-l border-[#D8C8BA] pl-5">
-                <p className="font-serif text-5xl text-[#4A342B]">20</p>
+                <p className="font-serif text-5xl text-[#4A342B]">30</p>
                 <p className="mt-2 text-[10px] uppercase tracking-[0.22em] text-[#987064]">
                   Moments in the gallery
                 </p>
