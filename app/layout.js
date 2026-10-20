@@ -39,13 +39,14 @@ export default function RootLayout({ children }) {
               var s1 = document.createElement("script");
               var s0 = document.getElementsByTagName("script")[0];
               s1.async = true;
-              s1.src = 'https://embed.tawk.to/6acf4a4bc8d9e734cf4cc1a2/1k4srkf4q';
+              s1.src='https://embed.tawk.to/6ad6fe581a401934cbbdda40/1k5bt34a2';
               s1.charset = "UTF-8";
               s1.setAttribute("crossorigin", "*");
               s0.parentNode.insertBefore(s1, s0);
             })();
           `}
         </Script>
+        
 
         <Script id="tawk-position" strategy="afterInteractive">
           {`
